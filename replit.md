@@ -8,7 +8,7 @@ NextStop is a travel agency website specializing in Chardham Yatra packages and 
 
 Preferred communication style: Simple, everyday language.
 Design theme: Clean, modern travel website design with professional blue (#2563EB), nature green (#16A34A), and warm orange (#F59E0B).
-Typography: Outfit for headings (modern, clean look) and Inter for body text (excellent readability).
+Typography: Playfair Display for headings (elegant serif) and PT Sans for body text (clean readability).
 Style preference: Clean, modern travel-focused design based on industry best practices - avoid overly blue or spiritual themes.
 
 ## System Architecture
