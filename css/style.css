@@ -3,24 +3,25 @@
 /* Import Google Fonts - Sacred Trails & Scenic Journeys Theme */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* CSS Variables for Sacred Trails Color Scheme */
+/* CSS Variables for Modern Clean Design */
 :root {
-    --primary-color: #FF9933;        /* Saffron - devotion & pilgrimage */
-    --secondary-color: #2C3E50;      /* Indigo/Navy - depth & professionalism */
-    --accent-color: #2E8B57;         /* Forest Green - nature & adventure */
-    --dark-color: #2C3E50;           /* Navy for text */
-    --light-color: #F7F1E1;          /* Earthy Beige - temples & peace */
-    --cream-color: #FFFEF7;          /* Light cream for purity */
-    --saffron-light: #FFB366;        /* Lighter saffron for hover effects */
-    --saffron-dark: #E6851A;         /* Darker saffron for shadows */
-    --forest-dark: #1F5F3F;          /* Darker forest green */
-    --gradient-primary: linear-gradient(135deg, #FF9933 0%, #E6851A 100%);
-    --gradient-secondary: linear-gradient(135deg, #2C3E50 0%, #34495e 100%);
-    --gradient-hero: linear-gradient(135deg, rgba(255, 153, 51, 0.85) 0%, rgba(44, 62, 80, 0.85) 100%);
-    --gradient-spiritual: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, rgba(247, 241, 225, 0.8) 100%);
-    --box-shadow: 0 10px 30px rgba(255, 153, 51, 0.15);
-    --box-shadow-dark: 0 10px 30px rgba(44, 62, 80, 0.15);
-    --transition: all 0.4s ease;
+    --primary-color: #3B82F6;        /* Modern blue - trust & reliability */
+    --secondary-color: #1F2937;      /* Dark gray - professional */
+    --accent-color: #059669;         /* Forest Green - nature & adventure */
+    --saffron-accent: #F59E0B;       /* Subtle saffron accent - spiritual touch */
+    --dark-color: #1F2937;           /* Dark gray for text */
+    --light-color: #F8FAFC;          /* Clean light background */
+    --cream-color: #FFFFFF;          /* Pure white */
+    --gray-100: #F3F4F6;             /* Light gray */
+    --gray-200: #E5E7EB;             /* Medium gray */
+    --gray-600: #4B5563;             /* Text gray */
+    --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+    --gradient-secondary: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(31, 41, 55, 0.8) 100%);
+    --gradient-spiritual: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(248, 250, 252, 1) 100%);
+    --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --box-shadow-dark: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
     --border-radius: 12px;
 }
 
@@ -117,7 +118,7 @@ a {
     font-size: 2rem;
     color: var(--primary-color) !important;
     font-weight: 700;
-    text-shadow: 1px 1px 3px rgba(255, 153, 51, 0.3);
+    text-shadow: none;
 }
 
 .navbar-nav .nav-link {
@@ -239,21 +240,22 @@ a {
 }
 
 .section-title::after {
-    content: '🕉️';
+    content: '';
     display: block;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin: 0.5rem auto;
+    width: 60px;
+    height: 3px;
+    background: var(--saffron-accent);
+    margin: 1rem auto;
+    border-radius: 2px;
 }
 
 .section-subtitle {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    color: var(--secondary-color);
+    color: var(--gray-600);
     margin-bottom: 3rem;
     text-align: center;
-    font-style: italic;
-    opacity: 0.8;
+    font-weight: 400;
 }
 
 /* Sacred Packages Section */
@@ -269,7 +271,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF9933' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.02'%3E%3Ccircle cx='40' cy='40' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
 }
 
@@ -290,8 +292,8 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: var(--gradient-primary);
+    height: 3px;
+    background: var(--saffron-accent);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -327,15 +329,14 @@ a {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--gradient-primary);
+    background: var(--primary-color);
     color: white;
-    padding: 10px 18px;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
     box-shadow: var(--box-shadow);
-    border: 2px solid white;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .package-content {
@@ -352,7 +353,7 @@ a {
 }
 
 .package-description {
-    color: #6b7280;
+    color: var(--gray-600);
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -394,7 +395,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FF9933' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233B82F6' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
 }
 
@@ -413,10 +414,9 @@ a {
 }
 
 .feature-icon {
-    font-size: 3.5rem;
-    color: var(--primary-color);
+    font-size: 3rem;
+    color: var(--saffron-accent);
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .feature-title {
@@ -438,16 +438,7 @@ a {
     position: relative;
 }
 
-.reviews-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF9933' fill-opacity='0.02'%3E%3Cpath d='M40 40c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm20 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none;
-}
+
 
 .review-card {
     background: white;
@@ -459,9 +450,8 @@ a {
 }
 
 .review-stars {
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    text-shadow: 1px 1px 2px rgba(255, 153, 51, 0.3);
+    color: var(--saffron-accent);
+    font-size: 1.2rem;
 }
 
 .review-text {

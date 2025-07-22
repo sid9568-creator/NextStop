@@ -7,8 +7,9 @@ NextStop is a travel agency website specializing in Chardham Yatra packages and 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
-Design theme: "Sacred Trails & Scenic Journeys" with saffron (#FF9933), indigo (#2C3E50), beige (#F7F1E1), and forest green (#2E8B57) colors.
-Typography: Playfair Display for headings (elegant, traditional feel) and Poppins for body text (modern readability).
+Design theme: Modern clean design with blue (#3B82F6), dark gray (#1F2937), and subtle saffron accents (#F59E0B) for spiritual touch.
+Typography: Playfair Display for headings (elegant feel) and Poppins for body text (modern readability).
+Style preference: Clean, modern look with minimal saffron - avoid overly spiritual/orange design.
 
 ## System Architecture
 
@@ -35,12 +36,12 @@ Typography: Playfair Display for headings (elegant, traditional feel) and Poppin
 - Mobile-responsive hamburger menu
 - WhatsApp contact integration
 
-### 2. Sacred Trails Styling Architecture
-- **CSS Variables**: Centralized spiritual color scheme and design tokens
-- **Color Palette**: Primary saffron (#FF9933), secondary indigo (#2C3E50), accent forest green (#2E8B57), earthy beige (#F7F1E1)
+### 2. Modern Clean Styling Architecture
+- **CSS Variables**: Centralized modern color scheme and design tokens
+- **Color Palette**: Primary blue (#3B82F6), secondary dark gray (#1F2937), accent forest green (#059669), subtle saffron (#F59E0B)
 - **Typography**: Playfair Display (serif) for headings, Poppins (sans-serif) for body text
-- **Spiritual Elements**: Om symbols, subtle mandala patterns, temple-inspired design elements
-- **Gradient System**: Saffron-to-indigo gradients for spiritual appeal
+- **Design Elements**: Clean lines, subtle gradients, minimal spiritual accents
+- **Gradient System**: Blue-to-gray gradients for professional appeal
 - **Responsive Design**: Mobile-first approach with Bootstrap grid system
 
 ### 3. Interactive Features
