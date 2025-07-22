@@ -2,11 +2,13 @@
 
 ## Overview
 
-NextStop is a travel agency website specializing in Chardham Yatra packages and spiritual tours based in Rishikesh. This is a static website built with HTML, CSS, and JavaScript, featuring a modern responsive design with Bootstrap framework integration.
+NextStop is a travel agency website specializing in Chardham Yatra packages and spiritual tours based in Rishikesh. This is a static website built with HTML, CSS, and JavaScript, featuring the "Sacred Trails & Scenic Journeys" theme with Hindu spirituality-inspired design and saffron color palette.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design theme: "Sacred Trails & Scenic Journeys" with saffron (#FF9933), indigo (#2C3E50), beige (#F7F1E1), and forest green (#2E8B57) colors.
+Typography: Playfair Display for headings (elegant, traditional feel) and Poppins for body text (modern readability).
 
 ## System Architecture
 
@@ -33,10 +35,12 @@ Preferred communication style: Simple, everyday language.
 - Mobile-responsive hamburger menu
 - WhatsApp contact integration
 
-### 2. Styling Architecture
-- **CSS Variables**: Centralized color scheme and design tokens
-- **Color Palette**: Primary blue (#2563eb), secondary orange (#f97316), accent green (#059669)
-- **Gradient System**: Custom gradients for visual appeal
+### 2. Sacred Trails Styling Architecture
+- **CSS Variables**: Centralized spiritual color scheme and design tokens
+- **Color Palette**: Primary saffron (#FF9933), secondary indigo (#2C3E50), accent forest green (#2E8B57), earthy beige (#F7F1E1)
+- **Typography**: Playfair Display (serif) for headings, Poppins (sans-serif) for body text
+- **Spiritual Elements**: Om symbols, subtle mandala patterns, temple-inspired design elements
+- **Gradient System**: Saffron-to-indigo gradients for spiritual appeal
 - **Responsive Design**: Mobile-first approach with Bootstrap grid system
 
 ### 3. Interactive Features
