@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - NextStop Travel Agency</title>
+    <meta name="description" content="Explore all our tour packages including Chardham Yatra, adventure tours, and spiritual journeys in Uttarakhand.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mountain text-primary me-2"></i>
+                NextStop
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link whatsapp-link" href="https://wa.me/919876543210?text=Hello%20NextStop,%20I%20would%20like%20to%20inquire%20about%20your%20tour%20packages" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title" data-aos="fade-up">Tour Packages</h1>
+                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Discover amazing destinations and unforgettable experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-page-section py-5">
+        <div class="container">
+            <!-- Package Categories -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="package-filters text-center" data-aos="fade-up">
+                        <button class="btn filter-btn active" data-filter="all">All Packages</button>
+                        <button class="btn filter-btn" data-filter="spiritual">Spiritual Tours</button>
+                        <button class="btn filter-btn" data-filter="adventure">Adventure Tours</button>
+                        <button class="btn filter-btn" data-filter="trekking">Trekking</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4" id="packagesGrid">
+                <!-- Package 1 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="spiritual" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1552055568-3421b2983221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chardham Yatra" class="img-fluid">
+                            <div class="price-tag">₹25,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Complete Chardham Yatra</h4>
+                            <p class="package-description">10 days spiritual journey covering Kedarnath, Badrinath, Gangotri & Yamunotri with comfortable accommodations and guided tours.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 10 Days</span>
+                                <span><i class="fas fa-users"></i> Group Tour</span>
+                                <span><i class="fas fa-hotel"></i> Hotels</span>
+                                <span><i class="fas fa-car"></i> Transport</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/chardham-yatra.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Complete%20Chardham%20Yatra%20package%20for%20₹25,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="spiritual" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kedarnath Special" class="img-fluid">
+                            <div class="price-tag">₹15,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Kedarnath Special</h4>
+                            <p class="package-description">6 days focused pilgrimage to the sacred Kedarnath Temple with helicopter services and comfortable stays.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 6 Days</span>
+                                <span><i class="fas fa-users"></i> Small Group</span>
+                                <span><i class="fas fa-helicopter"></i> Helicopter</span>
+                                <span><i class="fas fa-pray"></i> Guide</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/kedarnath-special.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Kedarnath%20Special%20package%20for%20₹15,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="spiritual" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Badrinath Darshan" class="img-fluid">
+                            <div class="price-tag">₹12,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Badrinath Darshan</h4>
+                            <p class="package-description">5 days peaceful journey to Lord Vishnu's sacred abode with family-friendly accommodations and local sightseeing.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 5 Days</span>
+                                <span><i class="fas fa-home"></i> Family Tour</span>
+                                <span><i class="fas fa-camera"></i> Sightseeing</span>
+                                <span><i class="fas fa-utensils"></i> Meals</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/badrinath-darshan.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Badrinath%20Darshan%20package%20for%20₹12,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 4 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="spiritual" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gangotri Yamunotri" class="img-fluid">
+                            <div class="price-tag">₹18,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Gangotri & Yamunotri</h4>
+                            <p class="package-description">7 days divine journey to the source of sacred rivers with spiritual cleansing ceremonies and meditation sessions.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 7 Days</span>
+                                <span><i class="fas fa-users"></i> Group Tour</span>
+                                <span><i class="fas fa-water"></i> Sacred Rivers</span>
+                                <span><i class="fas fa-om"></i> Meditation</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/gangotri-yamunotri.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Gangotri%20Yamunotri%20package%20for%20₹18,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 5 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="adventure trekking" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Himalayan Trek" class="img-fluid">
+                            <div class="price-tag">₹22,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Himalayan Trek Adventure</h4>
+                            <p class="package-description">8 days thrilling trek through stunning Himalayan landscapes with professional guides and camping under the stars.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 8 Days</span>
+                                <span><i class="fas fa-hiking"></i> Trekking</span>
+                                <span><i class="fas fa-campground"></i> Camping</span>
+                                <span><i class="fas fa-mountain"></i> 4200m</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/himalayan-trek.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Himalayan%20Trek%20Adventure%20for%20₹22,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 6 -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="adventure" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rishikesh Adventure" class="img-fluid">
+                            <div class="price-tag">₹8,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Rishikesh Adventure</h4>
+                            <p class="package-description">4 days yoga capital experience with river rafting, bungee jumping, and spiritual ashram visits for the perfect blend.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 4 Days</span>
+                                <span><i class="fas fa-water"></i> Rafting</span>
+                                <span><i class="fas fa-parachute-box"></i> Bungee</span>
+                                <span><i class="fas fa-pray"></i> Yoga</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="itinerary/rishikesh-adventure.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Rishikesh%20Adventure%20for%20₹8,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 7 - Valley of Flowers -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="adventure trekking" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Valley of Flowers" class="img-fluid">
+                            <div class="price-tag">₹19,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Valley of Flowers Trek</h4>
+                            <p class="package-description">6 days breathtaking trek to the UNESCO World Heritage site filled with rare flowers and stunning mountain views.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 6 Days</span>
+                                <span><i class="fas fa-flower"></i> Flowers</span>
+                                <span><i class="fas fa-award"></i> UNESCO</span>
+                                <span><i class="fas fa-camera"></i> Photography</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Valley%20of%20Flowers%20Trek%20for%20₹19,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 8 - Har Ki Dun -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="adventure trekking" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Har Ki Dun Trek" class="img-fluid">
+                            <div class="price-tag">₹16,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Har Ki Dun Trek</h4>
+                            <p class="package-description">7 days moderate trek to the hanging valley known as the 'Valley of Gods' with ancient villages and pristine nature.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 7 Days</span>
+                                <span><i class="fas fa-mountain"></i> 3566m</span>
+                                <span><i class="fas fa-home"></i> Villages</span>
+                                <span><i class="fas fa-leaf"></i> Nature</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Har%20Ki%20Dun%20Trek%20for%20₹16,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 9 - Nainital Tour -->
+                <div class="col-lg-4 col-md-6 package-item" data-category="adventure" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nainital Tour" class="img-fluid">
+                            <div class="price-tag">₹11,999</div>
+                        </div>
+                        <div class="package-content">
+                            <h4 class="package-title">Nainital Hill Station Tour</h4>
+                            <p class="package-description">5 days relaxing hill station tour with boating, cable car rides, and visits to nearby attractions like Bhimtal and Naukuchiatal.</p>
+                            <div class="package-features">
+                                <span><i class="fas fa-calendar-alt"></i> 5 Days</span>
+                                <span><i class="fas fa-ship"></i> Boating</span>
+                                <span><i class="fas fa-cable-car"></i> Cable Car</span>
+                                <span><i class="fas fa-home"></i> Family</span>
+                            </div>
+                            <div class="package-buttons">
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-1"></i> Download Itinerary
+                                </a>
+                                <a href="https://wa.me/919876543210?text=Hi%20NextStop,%20I%20want%20to%20book%20Nainital%20Hill%20Station%20Tour%20for%20₹11,999" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-1"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-logo">NextStop</h3>
+                    <p class="footer-description">Your trusted travel partner for spiritual journeys and adventure tours in Uttarakhand. Based in Rishikesh, we provide authentic local experiences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="packages.html" class="text-decoration-none text-light">Packages</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Popular Tours</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Chardham Yatra</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Kedarnath Special</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Rishikesh Adventure</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Himalayan Trek</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Rishikesh, Uttarakhand</p>
+                        <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@nextstoptravel.com</p>
+                    </div>
+                    <div class="whatsapp-footer">
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-success btn-sm">
+                            <i class="fab fa-whatsapp me-1"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright-text">© 2024 NextStop Travel Agency. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/packages.js"></script>
+</body>
+</html>
