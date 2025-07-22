@@ -394,54 +394,64 @@ a {
     color: #333;
 }
 
-/* Sacred Why Choose Us Section */
+/* Modern Why Choose Us Section */
 .why-choose-us-section {
-    background: var(--gradient-secondary);
-    color: white;
+    background: var(--gray-50);
+    padding: 80px 0;
     position: relative;
 }
 
-.why-choose-us-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233B82F6' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none;
+.why-choose-us-section .section-title {
+    color: var(--dark-color);
+}
+
+.why-choose-us-section .section-subtitle {
+    color: var(--gray-600);
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
     transition: var(--transition);
     height: 100%;
+    border: 1px solid var(--gray-200);
+    text-align: center;
 }
 
 .feature-card:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-xl);
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
 }
 
 .feature-icon {
-    font-size: 3rem;
-    color: var(--accent-color);
+    font-size: 3.5rem;
+    color: var(--white);
     margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem auto;
 }
 
 .feature-title {
-    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--dark-color);
 }
 
 .feature-description {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--gray-600);
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Sacred Reviews Section */
